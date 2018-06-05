@@ -1,0 +1,15 @@
+﻿@using CoffeeShopCart.Models;
+@{
+    ViewBag.Title = "Add";
+}
+
+<h2>Item Add</h2>
+
+Cart:
+<ul>
+    @foreach (Item b in (List<Item>)(Session["Cart"]))
+    {
+        <li>@b.ID by @b.Name</li>
+
+    }
+</ul>
